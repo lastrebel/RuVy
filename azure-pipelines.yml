@@ -1,13 +1,13 @@
 #test pipeline to deploy source code to external repository
 
 name: $(Date:yyyyMMdd)$(Rev:.r)
-
-pool:
-  vmImage: 'ubuntu-latest'
   
 trigger:
 - master
 
+pool:
+  vmImage: 'ubuntu-latest'
+  
 step:
 - script: |
     scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
