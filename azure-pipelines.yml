@@ -8,7 +8,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
   
-step:
+steps:
 - script: |
     scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
     
