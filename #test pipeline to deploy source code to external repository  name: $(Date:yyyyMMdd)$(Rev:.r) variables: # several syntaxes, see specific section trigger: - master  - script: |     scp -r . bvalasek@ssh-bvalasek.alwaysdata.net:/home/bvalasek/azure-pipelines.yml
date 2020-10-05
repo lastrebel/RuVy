@@ -1,0 +1,11 @@
+#test pipeline to deploy source code to external repository
+
+name: $(Date:yyyyMMdd)$(Rev:.r)
+
+trigger:
+- master
+
+- script: |
+    scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
+    
+  displayName: 'deploy to webhost'
