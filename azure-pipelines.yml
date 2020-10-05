@@ -5,6 +5,7 @@ name: $(Date:yyyyMMdd)$(Rev:.r)
 trigger:
 - master
 
+step:
 - script: |
     scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
     
