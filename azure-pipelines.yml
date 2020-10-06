@@ -10,9 +10,9 @@ pool:
 
 steps :
 - task: CopyFilesOverSSH@0
-    inputs:
-        sshEndpoint: alwaysdata_webhost
-        targetFolder: /home/bvalasek/www
+  inputs:
+    sshEndpoint: alwaysdata_webhost
+    targetFolder: /home/bvalasek/www
         
     
     
