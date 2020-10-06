@@ -9,11 +9,17 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps :
-- task: scpupload
-    inputs: 
-    password: branECKO20
+- task: SSH@0
+    inputs:
+        sshEndpoint: alwaysdata_webhost
+        targetFolder: /home/bvalasek/www
+        
     
-    script: |
-    scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
+    
+    
+   # password: branECKO20
+    
+   # script: |
+   # scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
     
   displayName: 'deploy to webhost'
