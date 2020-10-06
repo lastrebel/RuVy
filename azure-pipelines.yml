@@ -8,11 +8,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
+- task: scp upload
 inputs: |
     password:branECKO20
-    
-- script: |
+    script: |
     scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
     
   displayName: 'deploy to webhost'
