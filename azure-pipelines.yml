@@ -8,7 +8,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-task: scpupload
+-task: scpupload
     inputs:
     password:branECKO20
     
