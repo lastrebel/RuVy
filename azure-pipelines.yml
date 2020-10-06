@@ -7,10 +7,11 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
-  
-- steps:
-inputs:
+
+steps:
+inputs: |
     password:branECKO20
+    
 - script: |
     scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
     
