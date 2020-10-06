@@ -9,10 +9,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps :
-- task: SSH@0
-    inputs:
-        sshEndpoint: alwaysdata_webhost
-        targetFolder: /home/bvalasek/www
+    - task: SSH@0
+      inputs:
+      sshEndpoint: alwaysdata_webhost
+      targetFolder: /home/bvalasek/www
         
     
     
