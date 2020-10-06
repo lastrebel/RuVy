@@ -22,4 +22,4 @@ steps :
    # script: |
    # scp -r . bvalasek@ssh-bvalasek.alwaysdata.net:/home/bvalasek/www
     
-  displayName: 'deploy to webhost'
+  # displayName: 'deploy to webhost'
